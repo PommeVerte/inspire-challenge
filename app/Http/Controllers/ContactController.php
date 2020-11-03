@@ -30,8 +30,8 @@ class ContactController extends Controller
         // save the form data to DB. $request is already validated via ContactFormRequest
         $contact = Contact::create($request->all());
 
-        //dispatch the mailing job here
-        //@todo
+        //dispatch the mailing job
+        $this->dispatchNow(new ContactFormjob($contact));
 
         // if the form was submitted via ajax, return an appropriate JSON
         if ($request->ajax()) {
