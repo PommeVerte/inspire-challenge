@@ -16,7 +16,7 @@ php artisan key:generate
 php artisan test # or ./vendor/bin/phpunit
 ``` 
 
-Although the unit tests work out of the box (sqlite is required), you'll need to configure a couple of services to ensure the app/site is fully functional:
+Although the unit tests work out of the box (**sqlite is required**), you'll need to configure a couple of services to ensure the app/site is fully functional:
 
 ```dotenv
 DB_CONNECTION=sqlite
