@@ -48,7 +48,7 @@ class HomeControllerTest extends TestCase
 
     /**
      * Tests for all incorrect http verbs
-     * PHPUNIT dataProvider, works by sampling it's dataset from methodProvider()
+     * PHPUNIT dataProvider, works by sampling it's dataset from verbProvider()
      *
      * @param $verb
      *

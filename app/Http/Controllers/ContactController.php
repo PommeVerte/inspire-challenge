@@ -28,7 +28,7 @@ class ContactController extends Controller
     public function contact(ContactFormRequest $request)
     {
         // save the form data to DB. $request is already validated via ContactFormRequest
-        $contact = Contact::create($request->all());
+        $contact = Contact::create($request->post());
 
         //dispatch the mailing job
         $this->dispatchNow(new ContactFormjob($contact));

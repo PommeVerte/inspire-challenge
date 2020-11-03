@@ -31,13 +31,11 @@ class ContactFormJob implements ShouldQueue
     /**
      * Execute the job.
      *
-     * @return bool
+     * @return void
      */
-    public function handle(): bool
+    public function handle(): void
     {
         // Email the system contact
         Mail::to(config('mail.contact.to'))->send(new ContactMailable($this->contact));
-
-        return true;
     }
 }

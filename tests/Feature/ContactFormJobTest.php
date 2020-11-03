@@ -24,7 +24,7 @@ class ContactFormJobTest extends TestCase
         $contact = Contact::factory()->make();
 
         $job = new ContactFormJob($contact);
-        $this->assertTrue($job->handle());
+        $job->handle();
 
 
         Mail::assertSent(

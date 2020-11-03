@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "dylanmill/challenge",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Dealer Inspire challenge",
     "keywords": [
         "framework",
         "laravel"
