@@ -3,7 +3,7 @@ Thank you for taking the time to review my submission.
 
 I know the team uses Laravel on one (some?) of the projects, so I decided to use Laravel for this challenge.
 
-###Setup
+### Setup
 There are a few simple steps to get up and running 
 
 ```shell script
@@ -16,7 +16,7 @@ php artisan key:generate
 php artisan test # or ./vendor/bin/phpunit
 ``` 
 
-Although the unit tests work out of the box, you'll need to configure a couple of services to ensure the app/site is fully functional:
+Although the unit tests work out of the box (sqlite is required), you'll need to configure a couple of services to ensure the app/site is fully functional:
 
 ```dotenv
 DB_CONNECTION=sqlite
