@@ -1,0 +1,25 @@
+/**
+ * Adding a few form related styles missing from the provided version of bootstrap
+ */
+
+.is-invalid {
+    border: 3px solid #a94442;
+}
+
+/* Fixing text selection color */
+input::selection,
+textarea::selection {
+    background: #2e6da4;
+    color: white;
+}
+
+/**
+ * Disabled state for submit button
+ */
+button.disabled,
+button[disabled] {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
